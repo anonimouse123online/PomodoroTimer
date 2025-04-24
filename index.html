@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer with Alarm</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Pomodoro Timer</h1>
+    <div class="timer">
+      <div class="glass-container">
+        <div class="glass">
+          <div class="water" id="water"></div>
+        </div>
+      </div>
+      <div class="time-display">
+        <span id="hours">00</span>:<span id="minutes">25</span>:<span id="seconds">00</span>
+      </div>
+    </div>
+    <div class="set-timer">
+      <label for="hours-input">Hours: </label>
+      <input type="number" id="hours-input" min="0" placeholder="0">
+      <label for="minutes-input">Minutes: </label>
+      <input type="number" id="minutes-input" min="0" placeholder="0">
+      <label for="seconds-input">Seconds: </label>
+      <input type="number" id="seconds-input" min="0" placeholder="0">
+      <button id="set-time">Set</button>
+    </div>
+    <div class="controls">
+      <button id="start">Start</button>
+      <button id="pause">Pause</button>
+      <button id="reset">Reset</button>
+    </div>
+
+    <!-- Audio Element for Alarm -->
+    <audio id="alarm-sound" src="alarm.mp3" preload="auto"></audio>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
